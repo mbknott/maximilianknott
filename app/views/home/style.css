@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
+
+h1{
+    font-family:'Merriweather Sans',sans-serif;
+    font-size:12pt;
+    font-weight:normal;
+}
+
+li{
+    list-style:none;
+    font-family:'Merriweather Sans',sans-serif;
+    font-size:12pt;
+    font-weight:normal;
+    color:grey;
+    padding-left:20px;
+}
+
+.gallery {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.gallery h1{
+    color:saddlebrown;
+}
+
+.gallery h2{
+    color:grey;
+    font-size:12pt;
+    font-family:'Merriweather Sans', sans-serif;
+}
+
+.gallery p{
+    font-family:'Merriweather Sans',sans-serif;
+    color:grey;
+}
+
+.column{
+    display:flex;
+    flex-direction:column;
+    padding-bottom:50px;
+
+}
+
+.left{
+    margin-left:50px;
+    margin-right:25px;
+}
+
+.right{
+    margin-right:50px;
+    margin-left:25px;
+}
+
+/*
+.center{
+    margin-left:50px;
+    margin-right:50px;
+}
+*/
+
+img{
+    max-width:100%;
+    height:auto;
+    padding-bottom:50px;
+}
+
+.column.left img:hover{
+    animation: slide-right 1s 1;
+}
+
+/*
+.column.center img:hover{
+    animation: squeeze 1s 1;
+}
+*/
+
+.column.right img:hover{
+    animation: slide-left 1s 1;
+}
+
+.nav {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:20px;
+    text-decoration:none;
+    font-family:'Merriweather Sans',sans-serif;
+    color:black;
+}
+
+.nav a {
+    text-decoration:none;
+    font-family:'Merriweather Sans',sans-serif;
+    color:grey;
+}
+
+.nav a:hover{
+    color:black;
+}
+
+.footer{
+    display:flex;
+    justify-content:center;
+    font-family:'Merriweather Sans',sans-serif;
+    color:grey;
+}
+
+@keyframes slide-right{
+    0% {margin-left:0;}
+    100% {margin-left:10px;}
+}
+
+@keyframes slide-left{
+    0% {margin-right:0;}
+    100% {margin-right:10px;}
+}
+
+@keyframes squeeze{
+    0% {margin-right:0;margin-left:0;}
+    100% {margin-right:5px;margin-left:5px;}
+}
+
+
